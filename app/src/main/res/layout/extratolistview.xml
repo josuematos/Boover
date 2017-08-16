@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:text="data"
+            android:textColor="#004c98"
+            android:textSize="12sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/lbldescricao"
+            android:layout_toRightOf="@+id/txtdata"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtTrasancao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:text="Transacao"
+            android:textAlignment="textStart"
+            android:textColor="#004c98"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:text="Status"
+            android:textAlignment="textStart"
+            android:textColor="#004c98"
+            android:textSize="12sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtvalor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/txtsaldo"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:text="valor"
+            android:textAlignment="viewStart"
+            android:textColor="#004c98"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/txtsaldo"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:text="valor"
+            android:textAlignment="viewStart"
+            android:textColor="#004c98"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>
+

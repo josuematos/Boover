@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "703965355529",
+    "firebase_url": "https://boover-82fc3.firebaseio.com",
+    "project_id": "boover-82fc3",
+    "storage_bucket": "boover-82fc3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703965355529:android:8bcc35ca923c01fb",
+        "android_client_info": {
+          "package_name": "com.editorapendragon.boover"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "703965355529-4nml5p78h4701kaaqtk68rs7r1jel6tg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.editorapendragon.boover",
+            "certificate_hash": "4C9D7D52307129E33EBB9A87960D031D386D305B"
+          }
+        },
+        {
+          "client_id": "703965355529-ub2e663emaa30gj5v51s3u9j5sko7pub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwosM1ePYyIr3zpgnJacAopNpiJaH1YH8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "703965355529-ub2e663emaa30gj5v51s3u9j5sko7pub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llinformacoes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtRastreio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edittext_transparent"
+        android:ems="10"
+        android:hint="@string/rastreio"
+        android:textColorHint="@color/main_color_gray"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+         />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:id="@+id/txtEmpresa"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/empresa_rastreio"
+        android:textColorHint="@color/main_color_gray"
+        android:background="@drawable/rounded_edittext_transparent"
+        android:inputType="textPersonName"
+         />
+</LinearLayout>

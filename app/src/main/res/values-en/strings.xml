@@ -1,0 +1,452 @@
+﻿<resources>
+    <string name="app_name">Boover</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="type_msg">Type message</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="or">or</string>
+    <string name="email">Email</string>
+    <string name="displayName">Display Name</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log in</string>
+    <string name="forgot_my_pwd">I’ve forgotten my password?</string>
+    <string name="my_chats">My Chats</string>
+    <string name="all_chats">All Chats</string>
+    <string name="search">Search</string>
+    <string name="to">To:</string>
+    <string name="edit">Edit</string>
+    <string name="new_chat">New Chat</string>
+    <string name="alert_wait">Please wait...</string>
+    <string name="err_fields_empty">Please fill all the fields.</string>
+    <string name="err_singup">Error occurred while signup:</string>
+    <string name="err_login">Error occurred while login:</string>
+    <string name="err_users">Error occurred while finding users:</string>
+    <string name="alert_loading">Loading...</string>
+    <string name="msg_no_user_found">No users found for chat!</string>
+    <string name="delivered_text">Delivered</string>
+    <string name="sending_text">Sending...</string>
+    <string name="failed_text">Failed</string>
+
+    <string name="book_genre">"Literary genre: "</string>
+    <string name="negocio_iniciado">Business Initiate</string>
+    <string name="valor_compra">Purchase Value</string>
+    <string name="confirmacao_compra">Purchase Confirmation</string>
+    <string name="compra_efetuada">Purchase completed successfully!</string>
+    <string name="mensagem_compra_efetuada">O Vendedor já foi notificado de sua compra e em breve estará enviando o livro. Ele tem até 14 dias para fazer com que o livro chegue até você. Para acompanhar sua compra, acesse suas compras no menu superior das trocas. Se desejar, pode conversar com o vendedor pelo bate-papo.</string>
+    <string name="mensagem_confirmacao_compra">Ao confirmar, esse valor será debitado de sua conta e ficará bloqueado até que você receba o livro do vendedor. Confirma a compra?</string>
+    <string name="book_readed">"Read books: "</string>
+    <string name="book_change">"Exchanged books: "</string>
+    <string name="ver_reputation">View Reputation</string>
+    <string name="reputation">Reputation</string>
+    <string name="interesse">Interested in:</string>
+    <string name="idade">Age</string>
+    <string name="procurando">"Searching: "</string>
+    <string name="localizacao">"Location "</string>
+    <string name="veja_mais">See More</string>
+    <string name="server_client_id">703965355529-ub2e663emaa30gj5v51s3u9j5sko7pub.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">165412300638092</string>
+
+    <string name="local_service_started">Boover Service</string>
+
+    <string name="invitation_message">Highly recommend this App!</string>
+    <string name="invitation_deep_link">https://play.google.com/store/apps/details?id=com.editorapendragon.boover</string>
+    <string name="invitation_custom_image">http://app.editorapendragon.com.br/imagens/boover.jpg</string>
+    <string name="invitation_cta">Boover</string>
+    <string name="invitation_title">Know Boover</string>
+    <string name="invitation_emailhtmlcontent">"<![CDATA[
+        <p><img style="border-width: 0px;" src="http://app.editorapendragon.com.br/imagens/boover.jpg" alt="Boover" width="50" height="50" /></p>
+        <p>Hi!</p>
+        <p>Do you know the Boover application? No? He is great, he was made for people like us who love books. Want to find a content person to make friends or even be your crush? Or do you want to exchange books? So install the app and come to be happy!</p>
+        <p>Just click <a href="%%APPINVITE_LINK_PLACEHOLDER%%" target="_blank">here</a>, and ready!</p>
+        <p>&nbsp;</p>
+        <p>Welcome to our literary community!</p>
+        <p><img src="https://html-online.com/editor/tinymce/plugins/emoticons/img/smiley-cool.gif" alt="cool" /></p>
+        <p>&nbsp;</p>]]>\n"</string>
+
+    <string-array name="genre">
+        <item>Art</item>
+        <item>Biography</item>
+        <item>Business</item>
+        <item>Chick Lit</item>
+        <item>children\'s</item>
+        <item>Christian</item>
+        <item>Classics</item>
+        <item>HQ</item>
+        <item>Cooking</item>
+        <item>Crime</item>
+        <item>Ebooks</item>
+        <item>Fantasy</item>
+        <item>Fiction</item>
+        <item>Gay and Lesbian</item>
+        <item>Graphic Novels</item>
+        <item>Historical Fiction</item>
+        <item>History</item>
+        <item>Horror</item>
+        <item>Humor and Comedy</item>
+        <item>Manga</item>
+        <item>Memorandums</item>
+        <item>Music</item>
+        <item>Mistery</item>
+        <item>Non-fiction</item>
+        <item>Paranormal</item>
+        <item>Philosophy</item>
+        <item>Poetry</item>
+        <item>Psychology</item>
+        <item>Religion</item>
+        <item>Romance</item>
+        <item>Science</item>
+        <item>Science fiction</item>
+        <item>Self help</item>
+        <item>Suspense</item>
+        <item>Spiritist</item>
+        <item>Sports</item>
+        <item>Thriller</item>
+        <item>Travels</item>
+        <item>Young Adult</item>
+    </string-array>
+    <string-array name="status_book">
+        <item>Used</item>
+        <item>New</item>
+    </string-array>
+
+    <string name="site_amazon">webservices.amazon.com</string>
+    <string name="videos_de">"Videos of "</string>
+    <string name="status_negocio">Status: </string>
+    <string name="status_nao_enviado">"Not sent "</string>
+    <string name="status_enviado">Shipped to Buyer</string>
+    <string name="status_recebido">Received by Buyer</string>
+    <string name="saldob_insuficiente">Insufficient Boovers</string>
+    <string name="mensagem_saldob_insuficiente">You can get more boovers in your wallet or using the app. Every action you do, like posting, reviewing books, inviting friends, you earn B$. So, use it, it was made for you.</string>
+    <string name="dados_invalidos">"Invalid data "</string>
+    <string name="mensagem_recebida">"You received a message! "</string>
+    <string name="depois">"After "</string>
+    <string name="vender">Sell</string>
+    <string name="livros_vendidos">"Books Sold "</string>
+    <string name="sair_conversa">Delete Conversation or Group</string>
+    <string name="sair_conversa_msg">Are you sure you want to delete the conversation or group?</string>
+    <string name="boas_vindas">Welcome to Boover</string>
+    <string name="boas_vindas_msg">Welcome to our network of book lovers. To get started, update your profile picture and personal data.\nThen, enjoy meeting friends, chatting, searching and putting books on your personal bookshelf. You can also make trades easily and simply, so Boover has a special exchange currency, the B$. To get them, just enjoy, post, invite friends, finally use the app. The Boover was made for you Book Lover.</string>
+    <string name="esqueci_senha">"I forgot my password "</string>
+    <string name="email_enviado">"Email sent "</string>
+    <string name="email_invalido">"Invalid email "</string>
+    <string name="esqueci_senha_msg">Enter your email and click Ok to receive your new password.</string>
+    <string name="tamanho_senha">Password must be longer than 6 characters</string>
+    <string name="adicionar">Add</string>
+    <string name="atualizacao">Update</string>
+    <string name="qualificacoes">Qualifications</string>
+    <string name="qualificacao">"Qualification "</string>
+    <string name="atualizacao_msg">Hello boover! It looks like your app is outdated. Please click Ok to update it.</string>
+    <string name="amizade_desfeita">Broken Friendship :(</string>
+    <string name="alterar_imagem_grupo">Change Group Image</string>
+    <string name="alterar_senha">Change Password</string>
+    <string name="alterar">Change</string>
+    <string name="adicionar_grupo">Add to Group</string>
+    <string name="ambos">Both</string>
+    <string name="amigos">Friends</string>
+    <string name="aniversario">Birthday</string>
+    <string name="apagar_notificacoes">Delete Notifications</string>
+    <string name="apagar_visualizacoes">Delete Visualizations</string>
+    <string name="aqui_voce_encontra">Here you find people with content!</string>
+    <string name="atualizando_imagem">Refreshing image</string>
+    <string name="falha_autenticacao">Authentication failed.</string>
+    <string name="bem_vindo">"Welcome "</string>
+    <string name="ver_mais">More...</string>
+    <string name="bloquear_usuario">Block boover</string>
+    <string name="desbloquear_usuario">Unlock Boover</string>
+    <string name="bloqueados">Blocked Boovers</string>
+    <string name="classificacao_boover">Boover Classification</string>
+    <string name="boover_mesmo_gosto">Boovers with the same Literary Taste</string>
+    <string name="boovers_posts">Boovers with Posts</string>
+    <string name="boovers_videos">Boovers with Videos</string>
+    <string name="boovers_mercado">Boovers with Books for Exchange</string>
+    <string name="boovers_resenha">Boovers with Reviews</string>
+    <string name="boovers_on_line">Boovers On-Line</string>
+    <string name="boovers_amizade">Boovers for Friendship</string>
+    <string name="boovers_paquera">Boovers for Flirting</string>
+    <string name="boovers_proximos">Nearby Boovers</string>
+    <string name="boovers_email">Finding a Boover</string>
+    <string name="buscar">Search</string>
+    <string name="cancelar">Cancel</string>
+    <string name="carregando">"Loading... "</string>
+    <string name="chat">Chat</string>
+    <string name="minha_reputacao">Reputation</string>
+    <string name="minhas_ofertas">My Offers</string>
+    <string name="informar_envio">Shipment Report</string>
+    <string name="confirmar_envio">Confirm Shipping</string>
+    <string name="envio_informado">Informed Shipping!</string>
+    <string name="dados_envio">Shipping Information</string>
+    <string name="texto_qualificacao">Tell us how the negotiation was</string>
+    <string name="transacao">"Transaction: "</string>
+    <string name="abrir_reclamacao">Complain</string>
+    <string name="mensagem_confirmacao_envio">O envio foi informado ao comprador. Assim que ele receber o livro e informar ao sistema, o valor referente a compra será creditado em sua conta. Sempre mantenha as informações atualizadas e os envios em dia para ter uma reputação boa. Obrigado por utilizar nosso app.</string>
+    <string name="rastreio">"Tracking "</string>
+    <string name="empresa_rastreio">"Transport company "</string>
+    <string name="qualificar_comprador">Qualify Buyer</string>
+    <string name="enviar_qualificacao">Submit Qualification</string>
+    <string name="enviada_qualificacao">Qualification Submitted!</string>
+    <string name="mensagem_qualificacao_envio">The qualification has been registered, it is very important for the credibility of the application users, in this way always look for fair and true qualifications. At any time you can change your qualification. Thanks for using our app.</string>
+    <string name="qualificar_vendedor">Qualify Seller</string>
+    <string name="informar_recebimento">Receiving Report</string>
+    <string name="texto_informar_recebimento">By notifying the receipt of the book, you state that you received the product and finalized the negotiation. The amount paid will be credited to the seller\'s account. To complete the process, you must qualify the seller.</string>
+    <string name="minhas_compras">"My shopping "</string>
+    <string name="prazo_entrega">"Delivery Time: "</string>
+    <string name="ver_ofertas">View Exchange Offers</string>
+    <string name="frete_zerado">Are you sure you will not have shipping?</string>
+    <string name="minhas_vendas">My Sales</string>
+    <string name="ofertas">Offers</string>
+    <string name="entregues">Deliver</string>
+    <string name="nao_entregues">Not Sent</string>
+    <string name="enviados">Sent</string>
+    <string name="classificacao">Classification:</string>
+    <string name="voce_foi_qualificado">"You were qualified by the negotiation: "</string>
+    <string name="foi_creditado_em_sua_conta">Your account was credited to</string>
+    <string name="seu_livro_enviado">"Your book has been sent: "</string>
+    <string name="votar">"Vote "</string>
+    <string name="saldo_disponivel">Available:</string>
+    <string name="saldo_bloqueado">"Blocked: "</string>
+    <string name="minha_carteira">My Wallet</string>
+    <string name="votos">Votes</string>
+    <string name="reviews_amazon">More</string>
+    <string name="comprar_amazon">"Purchase "</string>
+    <string name="classificacao_google">Ranking Amazon:</string>
+    <string name="classificacoes">Ratings</string>
+    <string name="comentarios">"Comments "</string>
+    <string name="configuracoes">Settings</string>
+    <string name="contatos">Contacts</string>
+    <string name="conversa_iniciada">Conversation Started</string>
+    <string name="convidar_amigos">"Invite friends "</string>
+    <string name="convite">Invite</string>
+    <string name="convites">Invites</string>
+    <string name="convite_aceito">"Invitation accepted "</string>
+    <string name="convite_recusado">Refused Invitation</string>
+    <string name="criar">"Create "</string>
+    <string name="unset_favorito">Unmarked book as favorite</string>
+    <string name="unset_quero_ler">Unmarked book as I want to read</string>
+    <string name="busca_editora">Enter the Book\'s Publisher:</string>
+    <string name="digite_nova_senha">Enter the new password:</string>
+    <string name="busca_isbn">Enter the Book ISBN:</string>
+    <string name="busca_category">Enter the Genre of the Book:</string>
+    <string name="busca_autor">Enter Author\'s Name:</string>
+    <string name="busca_titulo">Enter the title of the Book:</string>
+    <string name="descricao">Description:</string>
+    <string name="enviar">Send</string>
+    <string name="escolha_genero">Choose Genre:</string>
+    <string name="estante_de">Bookshelf of</string>
+    <string name="estou_procurando">"I'm looking for "</string>
+    <string name="excluir_conta">"Delete account "</string>
+    <string name="excluir_livro">Delete Book</string>
+    <string name="excluir_post">Delete Post</string>
+    <string name="falha_imagem">Failed to refresh image</string>
+    <string name="fechar">Close</string>
+    <string name="feminino">"Female "</string>
+    <string name="foto_apagada">Photo deleted</string>
+    <string name="foto_perfl_atualizada">Profile photo updated</string>
+    <string name="genero_alterado">Gender changed to</string>
+    <string name="genero_literario">"Literary genre "</string>
+    <string name="genero_literario_preferido">"Preferred Literary Genre: "</string>
+    <string name="genero">Genre:</string>
+    <string name="gostou_foto">Liked your photo! :)</string>
+    <string name="gps_configurado">GPS configuration</string>
+    <string name="gps_nao_habilitado">GPS is not enabled. Do you want to go into settings?</string>
+    <string name="grupo">Group</string>
+    <string name="grupo_criado">Group Created</string>
+    <string name="boovers_grupo">Boovers in Group</string>
+    <string name="adicionado_grupo">You have been added to the group</string>
+    <string name="homem">Man</string>
+    <string name="livro">Book</string>
+    <string name="homens">Men</string>
+    <string name="estado_livro">What\'s the status of the book?</string>
+    <string name="info_livro">Provide more information (ripped, bruised, etc.):</string>
+    <string name="livro_marcado_favorito">Set as favorite book</string>
+    <string name="livro_marcado_lendo">"Set as reading "</string>
+    <string name="livro_marcado_lido">"Set as read "</string>
+    <string name="livro_marcado_troco">"I trade the book "</string>
+    <string name="livro_marcado_nao_lendo">"Set as not reading "</string>
+    <string name="livro_marcado_nao_lido">"Set as unread "</string>
+    <string name="livro_marcado_nao_troco">Please go to the exchange market to remove the sale book.</string>
+    <string name="livro_marcado_quero_ler">"Set as want to read "</string>
+    <string name="livro_removido">Book Removed</string>
+    <string name="livros">Books</string>
+    <string name="livros_lidos">"Read books: "</string>
+    <string name="login_invalido">"Invalid login. Try again. "</string>
+    <string name="marquei_como_troco">"Set as trade the book "</string>
+    <string name="marquei_como_favorito">Set as favorite the book</string>
+    <string name="marquei_como_lendo">"Set as reading the book "</string>
+    <string name="marquei_como_lido">Set as readed the bookc</string>
+    <string name="marquei_como_quero_ler">"Set as want to read the book "</string>
+    <string name="marquei_como_quero">"Set as want to read the book "</string>
+    <string name="masculino">Male</string>
+    <string name="eu">Me</string>
+    <string name="lendo">Reading</string>
+    <string name="lidos">Read</string>
+    <string name="favoritos">Favorites</string>
+    <string name="quero_ler">"I want to read "</string>
+    <string name="para_troca">"For sale "</string>
+    <string name="meu_cadastro">My Profile</string>
+    <string name="minhas_fotos">"My Photos "</string>
+    <string name="meus_videos">My Videos</string>
+    <string name="digite_nome_videos">Enter video title</string>
+    <string name="id_remove_video">Enter the Id of the video to remove</string>
+    <string name="remover">Remove</string>
+    <string name="remover_todos">Remove all</string>
+    <string name="id_invalido_video">Please enter a valid Id</string>
+    <string name="id_invalido_nome_video">Please enter a valid title</string>
+    <string name="id_removido_video">Video successfully removed!</string>
+    <string name="id_adicionado_video">Video added successfully!</string>
+    <string name="mulheres">"Women "</string>
+    <string name="nao">No</string>
+    <string name="nao_autorizado">"Not authorized! "</string>
+    <string name="nao_encontrado">"Not found. "</string>
+    <string name="nao_foi_possivel_registrar">Could not register. Use a valid email and a password longer than 6 characters.</string>
+    <string name="notificacoes">Notifications</string>
+    <string name="notificacoes_apagadas">Notifications deleted</string>
+    <string name="novo">New</string>
+    <string name="novo_canal_crado">New Channel Created</string>
+    <string name="novo_post_criado">New Post Created</string>
+    <string name="post_criado_boover">" created a Post! Look..."</string>
+    <string name="obrigado_por_fazer_o_boover">Thanks for making Boover grow. To continue press Send, otherwise press Cancel.</string>
+    <string name="paquera">Flirting</string>
+    <string name="paqueras">Flirt</string>
+    <string name="pedido_amizade">"Friend Request sent by "</string>
+    <string name="pedidos_de_amizade">"Friend requests "</string>
+    <string name="msg_pedido_amizade">You have received a friend request!</string>
+    <string name="perfil_atualizado">Boover\'s profile updated</string>
+    <string name="digite_aniversario">Please enter your birthday.</string>
+    <string name="digite_email">"Please, type your e-mail "</string>
+    <string name="digite_primeiro_nome">Please enter your first name</string>
+    <string name="digite_ultimo_nome">Please enter your last name</string>
+    <string name="digite_senha">Please enter your password</string>
+    <string name="digite_nome_grupo">Enter the name of the group:</string>
+    <string name="digite_busca_email">Enter the email address of Boover:</string>
+    <string name="digite_titulo">Enter Post title</string>
+    <string name="digite_mensagem">Enter Post Message</string>
+    <string name="recarregue_pagina">Please reload page</string>
+    <string name="erro_recuperar_dados">There was an error retrieving the data</string>
+    <string name="erro_recuperar_credenciais">There was an error retrieving the user credentials</string>
+    <string name="postar">"Post "</string>
+    <string name="posts">Posts</string>
+    <string name="preco">"Price "</string>
+    <string name="preco_ebook">Price Ebook Google</string>
+    <string name="primeiro_nome">"First name "</string>
+    <string name="privacidade">Privacy</string>
+    <string name="quantos_boovers">How many boovers does he deserve:</string>
+    <string name="quem_pode_falar">Who can talk to me?</string>
+    <string name="quem_pode_perfil">Who can see my profile?</string>
+    <string name="quem_pode_post">Who can see my posts?</string>
+    <string name="quem_pode_fotos">Who can see my photos?</string>
+    <string name="quem_pode_videos">Who can see my videos?</string>
+    <string name="registrando_usuario">Registering boover</string>
+    <string name="registrar">Create an account</string>
+    <string name="resenha_livro">Book Review</string>
+    <string name="sair">Exit</string>
+    <string name="sair_grupo">"Leave the group "</string>
+    <string name="salvo">"Saved! "</string>
+    <string name="selecione_foto">Select your photo</string>
+    <string name="selecione_imagem">Select an image or video</string>
+    <string name="digite_id_youtube">Enter Youtube ID</string>
+    <string name="link_errado_youtube">Enter only valid YouTube ID</string>
+    <string name="link_youtube_salvo">Saved YouTube link</string>
+    <string name="meus_youtube">My YouTube</string>
+    <string name="verifica_youtube">Is this the video you want?</string>
+    <string name="selecione_data">Select date</string>
+    <string name="senha_alterada">Password changed. Please login first.</string>
+    <string name="sexo">Gender</string>
+    <string name="mensagem">Message</string>
+    <string name="estante">Bookshelf</string>
+    <string name="resenhas">Review</string>
+    <string name="Videos">Videos</string>
+    <string name="categoria">Genre</string>
+    <string name="Fotos">Photos</string>
+    <string name="adc">Add</string>
+    <string name="editora">Publisher</string>
+    <string name="colocar_foto_perfil">"Profile picture "</string>
+    <string name="autor">Author</string>
+    <string name="salvar">Save</string>
+    <string name="novo_post">New Post</string>
+    <string name="block">Block</string>
+    <string name="criar_grupo">"Create group "</string>
+    <string name="trocas">Exchanges</string>
+    <string name="sim">Yes</string>
+    <string name="precob">Price B$</string>
+    <string name="menor_precob">Lowest price B$</string>
+    <string name="maior_precob">Higher Price B$</string>
+    <string name="medio_precob">Average price B$</string>
+    <string name="freteb">Freight B$</string>
+    <string name="totais">"Totals: "</string>
+    <string name="status">Status</string>
+    <string name="extrato">Transactions</string>
+    <string name="status_extrato_credito">Credits</string>
+    <string name="status_extrato_recarga">Purchase of B$</string>
+    <string name="status_extrato_debito">Debits</string>
+    <string name="status_extrato_venda">Sale Done</string>
+    <string name="status_extrato_compra">"Purchase made "</string>
+    <string name="status_extrato_posts">Earnings with Posts</string>
+    <string name="status_extrato_convites">Earned Sent Invitations</string>
+    <string name="status_extrato_grupos">Earnings with Created Groups</string>
+    <string name="status_extrato_fotos">Earned Photos Up</string>
+    <string name="status_extrato_likes">Earnings with Likes</string>
+    <string name="seu_livro_foi_vendido">"Your book has been sold, check the transaction to send the book to the buyer. "</string>
+    <string name="meus_saldos">My Balances</string>
+    <string name="totalb">Totals B$</string>
+    <string name="pagarb">Pay with B$</string>
+    <string name="vendedor">"Seller: "</string>
+    <string name="comprador">Buyer:</string>
+    <string name="data_venda">Date of Sale:</string>
+    <string name="somente_amigos">Available only to friends. Send a friend request.</string>
+    <string name="titulo">"Title "</string>
+    <string name="tem_certeza_aceitar_convite">"Are you sure you want to accept the invitation from "</string>
+    <string name="tem_certeza_book_market">Are you sure you want to place this book for sale exchange?</string>
+    <string name="mensagem_book_market">The application uses a virtual currency to make it easier to trade books. There is no charge for actual values, with the total virtual value being transferred to your balance. If you wish to continue, the book will be available in the exchange offers of the Market.</string>
+    <string name="tem_certeza_retirar_book_market">Are you sure you want to remove this book from the exchanges?</string>
+    <string name="tem_certeza_adc_usuario">Are you sure you want to add this boover as a friend?</string>
+    <string name="tem_certeza_alterar_img_grupo">Are you sure you want to change the image for this group?</string>
+    <string name="tem_certeza_bloquear_usuario">Are you sure you want to block this boover?</string>
+    <string name="tem_certeza_desbloqueaar_usuario">Are you sure you want to unblock boover</string>
+    <string name="tem_certeza_desfazer_amizade">Are you sure you want to undo this friendship?</string>
+    <string name="tem_certeza_excluir_conta">Are you sure you want to delete the account?</string>
+    <string name="tem_certeza_excluir_todas_notificacoes">Are you sure you want to delete all notifications?</string>
+    <string name="tem_certeza_excluir_notificacoes">Are you sure you want to delete notifications for this boover?</string>
+    <string name="tem_certeza_excluir_visualizacoes">Are you sure you want to delete views of this boover?</string>
+    <string name="tem_certeza_excluir_todas_visualizacoes">Are you sure you want to delete all views?</string>
+    <string name="tem_certeza_excluir_livro_estante">Are you sure you want to delete the book from the bookshelf?</string>
+    <string name="tem_certeza_excluir_post">Are you sure you want to delete the post?</string>
+    <string name="tem_certeza_sair_grupo">Are you sure you want to leave this group?</string>
+    <string name="tem_certeza_sair_programa">Are you sure you want to exit the app?</string>
+    <string name="tenho_interesse">I\'m interested in</string>
+    <string name="todos">"All "</string>
+    <string name="todos_boovers">All Boovers</string>
+    <string name="ultimo_nome">Last Name</string>
+    <string name="upload_finalizado">Upload completed...</string>
+    <string name="usuario_bloqueado">Boover blocked</string>
+    <string name="usuario_desbloqueado">Unblocked Boover</string>
+    <string name="usuario_removido">Boover removed</string>
+    <string name="utilize_longo_convite">Use the long touch to accept invitations</string>
+    <string name="utilize_longo_desbloquear">Use the long touch to unblock</string>
+    <string name="verificando_usuario">Checking boover...</string>
+    <string name="visualizacoes">Visualizations</string>
+    <string name="visualizacoes_apagadas">Deleted Visualizations</string>
+    <string name="voce_economiza">"You save "</string>
+    <string name="notificacoes_nao_lidas">You have notifications. Access the app now!</string>
+    <string name="voltar">Back</string>
+    <string name="ou">Or</string>
+    <string name="aceitou_convite">Accepted your invitation! :)</string>
+    <string name="convites_recebidos">Invitations Received</string>
+    <string name="boovers_bloqueados">Blocked Boovers</string>
+</resources>
+

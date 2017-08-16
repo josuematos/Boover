@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/frgwallet_frame">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rlSwitch"
+        android:visibility="visible"
+        android:background="#EAEAAE"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnBack"
+            android:src="@drawable/ic_back"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            android:layout_gravity="left"
+            android:padding="6dp"
+            android:background="@null"
+            />
+       </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lstViewComprar"
+        android:layout_below="@id/rlSwitch"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+</RelativeLayout>

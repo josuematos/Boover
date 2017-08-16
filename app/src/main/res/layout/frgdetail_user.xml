@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.editorapendragon.boover.FrgDetailUser">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rlSwitch"
+        android:visibility="visible"
+        android:background="#EAEAAE"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnCancel"
+            android:src="@drawable/ic_back"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            android:layout_gravity="left"
+            android:padding="6dp"
+            android:background="@null"
+            />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnSave"
+            android:src="@drawable/ic_save"
+            android:cropToPadding="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:layout_gravity="right"
+            android:padding="12dp"
+            android:background="@null"
+            />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textAlignment="center"
+            android:textColor="@color/blue_main"
+            android:textSize="8dp"
+            android:text="@string/salvar"
+            android:id="@+id/lblsalvar" />
+    </RelativeLayout>
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlBody"
+    android:layout_below="@id/rlSwitch"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+    <TextView
+        android:text="@string/sexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#004c98"
+        android:id="@+id/textView4"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/edtLastName"
+     />
+
+
+    <ToggleButton
+        android:text="@string/masculino"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/tglMasculino"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:textOn="Masculino"
+        android:textOff="Masculino"
+        android:layout_centerVertical="true"
+        android:textColor="#004c98"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:shadowColor="@null" />
+
+    <TextView
+        android:text="@string/aniversario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#004c98"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/tglMasculino"
+         />
+
+    <EditText
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textColor="#004c98"
+        android:id="@+id/datBirthday"
+        android:background="#F0F8FF"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        android:layout_below="@+id/textView5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:textColor="#004c98"
+        android:id="@+id/edtLastName"
+        android:layout_below="@+id/textView3"
+        android:background="#F0F8FF" />
+
+    <TextView
+        android:text="@string/primeiro_nome"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#004c98"
+        android:id="@+id/textView2"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:textColor="#004c98"
+        android:background="#F0F8FF"
+        android:id="@+id/edtName"
+        android:layout_below="@+id/textView2" />
+
+    <TextView
+        android:text="@string/tenho_interesse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#004c98"
+        android:id="@+id/textView14"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/datBirthday" />
+
+
+    <ToggleButton
+        android:text="@string/homens"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/tglHomem"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:textOn="@string/homens"
+        android:textOff="@string/homens"
+        android:textColor="#004c98"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:shadowColor="@null"
+         />
+
+    <ToggleButton
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:textAllCaps="false"
+        android:textColor="#004c98"
+        android:background="#ffffff"
+        android:layout_height="30dp"
+        android:shadowColor="@null"
+        android:text="@string/mulheres"
+        android:textOn="@string/mulheres"
+        android:textOff="@string/mulheres"
+        android:layout_toRightOf="@+id/tglHomem"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tglMulher"
+        android:layout_above="@+id/textView15" />
+
+        <ToggleButton
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="#004c98"
+            android:background="#ffffff"
+            android:layout_height="30dp"
+            android:shadowColor="@null"
+            android:text="@string/ambos"
+            android:textOn="@string/ambos"
+            android:textOff="@string/ambos"
+            android:layout_toRightOf="@+id/tglMulher"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tglAmbos"
+            android:layout_above="@+id/textView15" />
+
+
+
+        <TextView
+        android:text="@string/estou_procurando"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#004c98"
+        android:id="@+id/textView15"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tglHomem" />
+
+
+    <ToggleButton
+        android:text="@string/amigos"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/tglAmigos"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:textOn="@string/amigos"
+        android:textOff="@string/amigos"
+        android:textColor="#004c98"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:shadowColor="@null"
+        />
+
+    <ToggleButton
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:textAllCaps="false"
+        android:textColor="#004c98"
+        android:background="#ffffff"
+        android:shadowColor="@null"
+        android:text="@string/paquera"
+        android:textOn="@string/paquera"
+        android:textOff="@string/paquera"
+        android:layout_toRightOf="@+id/tglAmigos"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tglPaquera"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/tglAmigos" />
+
+    <TextView
+        android:text="@string/ultimo_nome"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#004c98"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/edtName" />
+
+    <ToggleButton
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:textAllCaps="false"
+        android:textColor="#004c98"
+        android:background="#ffffff"
+        android:shadowColor="@null"
+        android:text="@string/feminino"
+        android:textOn="@string/feminino"
+        android:textOff="@string/feminino"
+        android:id="@+id/tglFeminino"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/tglMulher"
+        android:layout_alignStart="@+id/tglMulher"
+        android:layout_alignBottom="@+id/tglMasculino" />
+
+    </RelativeLayout>
+</RelativeLayout>

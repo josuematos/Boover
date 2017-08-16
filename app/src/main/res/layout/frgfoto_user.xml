@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_foto_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.editorapendragon.boover.FotoUser">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/rlSwitch"
+        android:id="@+id/booverimageView"
+        android:src="@drawable/img_txt_boover_2"
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@null"
+        android:background="@color/blue_main_light"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/booverimageView"
+        android:id="@+id/imgUser"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true" />
+
+    <Button
+        android:text="@string/selecione_foto"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape_rounded"
+        android:textAllCaps="false"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnImage"
+        android:layout_below="@+id/imgUser"/>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/ic_fotolike"
+        android:src="@drawable/ic_heart_vazado"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        android:padding="12dp"
+        android:background="@null"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/btnImage"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rlSwitch"
+        android:visibility="visible"
+        android:background="#EAEAAE"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnCancel"
+            android:src="@drawable/ic_back"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            android:layout_gravity="left"
+            android:padding="6dp"
+            android:background="@null"
+            />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnRemoveImage"
+            android:src="@drawable/ic_remove_image"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:padding="12dp"
+            android:background="@null"
+            />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textAlignment="center"
+            android:textColor="@color/blue_main"
+            android:textSize="8dp"
+            android:text="@string/remover"
+            android:id="@+id/lblremover" />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnMakeDefault"
+            android:src="@drawable/ic_photo_default"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            android:layout_toLeftOf="@id/btnRemoveImage"
+            android:layout_gravity="right"
+            android:padding="12dp"
+            android:background="@null"
+            />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/btnRemoveImage"
+            android:textAlignment="center"
+            android:textColor="@color/blue_main"
+            android:textSize="8dp"
+            android:text="@string/colocar_foto_perfil"
+            android:id="@+id/lblperfil" />
+    </RelativeLayout>
+
+</RelativeLayout>

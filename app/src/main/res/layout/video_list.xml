@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2012 Google Inc. All Rights Reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <FrameLayout
+      android:id="@+id/cont_box"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/yellow_main"
+        android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/img_txt_boover_2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:id="@+id/imgPhotoPerfil" />
+      <TextView
+          android:text="@string/meu_cadastro"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="14dp"
+          android:padding="2dp"
+          android:layout_toRightOf="@id/imgPhotoPerfil"
+          android:textColor="#004c98"
+          android:id="@+id/txtnomeUser"
+          android:layout_marginLeft="10dp"
+          android:layout_centerVertical="true"
+       />
+      <ImageButton
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:id="@+id/btnClose"
+          android:src="@drawable/ic_back"
+          android:cropToPadding="true"
+          android:scaleType="fitCenter"
+          android:layout_alignParentRight="true"
+          android:padding="6dp"
+          android:background="@null"
+          android:layout_marginTop="5dp"
+          />
+      <ImageButton
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:id="@+id/btnAddVideo"
+          android:src="@drawable/ic_add_youtube"
+          android:cropToPadding="true"
+          android:scaleType="fitCenter"
+          android:layout_toLeftOf="@id/btnClose"
+          android:padding="6dp"
+          android:background="@null"
+          android:layout_marginTop="5dp"
+          />
+      <TextView
+          android:layout_width="50dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_toLeftOf="@id/btnClose"
+          android:textAlignment="center"
+          android:textColor="@color/blue_main"
+          android:textSize="8dp"
+          android:text="@string/adicionar"
+          android:id="@+id/lbladd" />
+
+      <ImageButton
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:id="@+id/btnRemoveVideo"
+          android:src="@drawable/ic_remove_youtube"
+          android:cropToPadding="true"
+          android:scaleType="fitCenter"
+          android:layout_toLeftOf="@id/btnAddVideo"
+          android:padding="6dp"
+          android:background="@null"
+          android:layout_marginTop="5dp"
+          />
+      <TextView
+          android:layout_width="50dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_toLeftOf="@id/btnAddVideo"
+          android:textAlignment="center"
+          android:textColor="@color/blue_main"
+          android:textSize="8dp"
+          android:text="@string/remover"
+          android:id="@+id/lblremover" />
+    </RelativeLayout>
+  <fragment
+      class="com.editorapendragon.boover.ActivityVideoList$VideoListFragment"
+      android:id="@+id/list_fragment"
+      android:layout_width="match_parent"
+      android:layout_marginTop="60dp"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:layout_marginBottom="5dp"
+      android:layout_height="match_parent"/>
+
+  <LinearLayout
+      android:id="@+id/video_box"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+      android:layout_margin="10dp"
+      android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@android:drawable/btn_dialog"
+        android:onClick="onClickClose"/>
+    <fragment
+        class="com.editorapendragon.boover.ActivityVideoList$VideoFragment"
+        android:id="@+id/video_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+  </LinearLayout>
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center"
+        />
+  </FrameLayout>
+
+</merge>

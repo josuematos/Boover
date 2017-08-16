@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <TextView
+        android:text="@string/digite_id_youtube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#004c98"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txtIdVideo"
+        />
+
+    <EditText
+        android:hint="Id"
+        android:textColorHint="@color/main_color_gray"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textColor="#004c98"
+        android:id="@+id/edtIdVideo"
+        android:cursorVisible="true"
+        android:background="#F0F8FF"
+        android:padding="5dp"
+        android:inputType="textPersonName">
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:text="@string/digite_nome_videos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#004c98"
+        android:id="@+id/txtNomeVideo"
+        />
+
+    <EditText
+        android:id="@+id/edtNomeVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#F0F8FF"
+        android:cursorVisible="true"
+        android:hint="@string/titulo"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textColor="#004c98"
+        android:textColorHint="@color/main_color_gray" />
+</LinearLayout>

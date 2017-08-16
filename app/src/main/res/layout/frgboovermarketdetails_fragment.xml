@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/frgboovermyshelf_frame">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rlSwitch"
+        android:visibility="visible"
+        android:background="#EAEAAE"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnBack"
+            android:src="@drawable/ic_back"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            android:layout_gravity="left"
+            android:padding="6dp"
+            android:background="@null"
+            />
+
+        <LinearLayout
+            android:id="@+id/llsaldos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/btnBack"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_meusaldos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                android:gravity="center|left"
+                android:padding="2dp"
+                android:scrollbars="vertical"
+                android:text="@string/saldo_disponivel"
+                android:textAlignment="center"
+                android:textColor="#004c98"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lbl_bloqueado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                android:gravity="center|left"
+                android:padding="2dp"
+                android:scrollbars="vertical"
+                android:text="@string/saldo_bloqueado"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llvalores"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/llsaldos"
+            android:layout_marginLeft="2dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_saldob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="2dp"
+                    android:text="B$"
+                    android:textColor="#004c98"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_saldob"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="0.00"
+                    android:textAlignment="textEnd"
+                    android:textColor="#004c98"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_bloqueadob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="2dp"
+                    android:text="B$:"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_bloqueadob"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="0.00"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="55dp"
+            android:id="@+id/ic_minha_carteira"
+            android:src="@drawable/ic_carteira"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:paddingTop="8dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:background="@null"
+            />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textAlignment="center"
+            android:textColor="@color/blue_main"
+            android:textSize="8dp"
+            android:text="@string/minha_carteira"
+            android:id="@+id/lblminhacarteira" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/blue_main"
+        android:textSize="14dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/blue_main_light"
+        android:text="@string/ofertas"
+        android:layout_below="@id/rlSwitch"
+        android:id="@+id/lblnomemarket" />
+    <ListView
+        android:id="@+id/lstViewMarket"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/lblnomemarket"
+        />
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

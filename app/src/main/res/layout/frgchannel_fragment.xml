@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent"
+    android:id="@+id/frgchannel_frame" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_below="@id/rlAcBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/rlSwitch"
+            android:visibility="visible"
+            android:background="#EAEAAE"
+            android:layout_gravity="top|center_horizontal">
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/ic_switch"
+                    android:src="@drawable/ic_refresh"
+                    android:cropToPadding="true"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="left"
+                    android:padding="6dp"
+                    android:background="@null" />
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ic_new_group"
+                android:src="@drawable/ic_add_group"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:background="@null" />
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textAlignment="center"
+                android:textColor="@color/blue_main"
+                android:textSize="8dp"
+                android:text="@string/criar_grupo"
+                android:id="@+id/lbladcgrupo" />
+        </RelativeLayout>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:background="#fff"
+    android:layout_below="@id/rlSwitch">
+        <ListView
+            android:id="@+id/lstViewchannel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />
+
+</RelativeLayout>
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</FrameLayout>

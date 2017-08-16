@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent"
+    android:id="@+id/frguser_frame" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlUser"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/img_txt_boover_2"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/rlSwitch"
+            android:background="#ffffff"
+            android:scaleType="centerCrop"
+            android:id="@+id/imgPhotoPerfil" />
+
+        <ListView
+            android:layout_marginTop="15dp"
+            android:id="@+id/lstView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/imgPhotoPerfil"
+            />
+
+        <TextView
+            android:text="@string/meu_cadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:padding="2dp"
+            android:textColor="#004c98"
+            android:id="@+id/txtPerfil"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="2dp"
+            android:layout_alignTop="@+id/imgPhotoPerfil"
+            android:layout_toRightOf="@+id/imgPhotoPerfil"
+            android:layout_toEndOf="@+id/imgPhotoPerfil" />
+        <TextView
+            android:text="@string/genero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:padding="2dp"
+            android:textColor="#004c98"
+            android:id="@+id/txtGenre"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/txtPerfil"
+            android:layout_toRightOf="@+id/imgPhotoPerfil" />
+    </RelativeLayout>
+</RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imgDisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="@drawable/rounded_edittext_transparent"
+        android:textColor="@color/blue_main"
+        android:text="@string/fechar" />
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/btnRemoveImage"
+        android:src="@drawable/ic_remove_image"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="right"
+        android:padding="6dp"
+        android:background="@drawable/rounded_edittext_transparent"
+        />
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/btnMakeDefault"
+        android:src="@drawable/ic_photo_default"
+        android:cropToPadding="true"
+        android:layout_marginLeft="5dp"
+        android:scaleType="fitCenter"
+        android:layout_toRightOf="@id/btnRemoveImage"
+        android:layout_gravity="right"
+        android:padding="6dp"
+        android:background="@drawable/rounded_edittext_transparent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="1/5"
+        android:textColor="@color/blue_main"
+        android:background="@drawable/rounded_edittext_transparent"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/txtpage"/>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/ic_fotolike"
+        android:src="@drawable/ic_heart_vazado"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_transparent"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="155dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="9dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:background="@null"
+        android:id="@+id/txtlike"/>
+
+</RelativeLayout>

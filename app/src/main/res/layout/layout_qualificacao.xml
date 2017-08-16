@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llinformacoes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RatingBar
+        android:id="@+id/txtRating"
+        android:theme="@style/RatingBar"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext_transparent"
+        android:ems="10"
+        android:max="5"
+        android:numStars="5"
+        android:padding="10dp"
+        android:rating="1"
+        android:stepSize="1" />
+
+    <EditText
+        android:id="@+id/txtTextoQualificacao"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext_transparent"
+        android:elevation="1dp"
+        android:textColor="@color/blue_main"
+        android:ems="10"
+        android:foregroundGravity="top|left"
+        android:gravity="top|left"
+        android:hint="@string/texto_qualificacao"
+        android:inputType="textMultiLine|textLongMessage"
+        android:padding="10dp"
+        android:textColorHint="@color/main_color_gray" />
+</LinearLayout>
